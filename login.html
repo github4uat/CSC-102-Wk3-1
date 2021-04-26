@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--All html files begin with <!DOCTYPE html>  -->
+<html>
+<!--This is the how you let future people who work on your old files contact you
+by: Trevor Satrom
+contact tjsatrom@gmail.com
+for CSC102 SP2021 Week 3-1
+Assignment for this Session=Mission Control Operator Login:100 pts. where we code the Login page for our website.  -->
+<!--html notes-->
+
+<!--this is the head.  the Head is what shows up on the TAB of a webpage.-->
+<head>
+    <!--this is where we link the .js file with the .html file.  It's cleaner this way-->
+    <script src="loginCode.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!--this is the head.  This shows up on the TAB, not the webpage.-->
+    <title>UATSpace login</title>
+    <!--this is the end of the head.  the Head is what shows up on the TAB of a webpage.-->
+</head>
+
+
+<!--this is the body.  This shows up on the webpage itself, not the tab.-->
+<body>
+    <!--h1 dictates the size and boldness of the font. h1 is the biggest and boldest, going to h2 and so on.-->
+    <h1>
+        <!--this is the Welcome to UATSpace login text that shows at the TOP of the page-->
+        Welcome to UATSpace login page
+    </h1>
+
+
+    <!--this tells the webpage to insert a paragraph space between the h1 font above^ and the "status of login" text below-->
+    <p id="loginStatus">
+        Status of login
+    <!--this tells the page to end the paragraph space-->    
+    </p>
+    <!--br=carriage return or space-->
+    <br>
+    <!--html notes-->
+
+    <!--this is where we create the credentials.  We're going to need a First and Last Name, and a Badge Number-->
+    <form id="creditSubmit" onsubmit="return false">
+        <!--this is where the First Name credential is created-->
+    First Name:    <input type="text" id="fName" /><br>
+     <!--this is where the Last Name credential is created-->
+    Last Name:    <input type="text" id="lName" /><br>
+    <!--this is where the Badge Number credential is created-->
+    Badge Number:    <input type="number" id="badgeID" /><br>
+    <!--this is where we tell the computer program to check Credentials after clicking "Submit" button-->
+    <input type="submit" onclick="checkCreds();" />
+    <!--this is the conclusion of the Login Page Form.  -->
+    </form>
+
+    <!--this is the end of the body-->
+</body>
+
+<!--this is the end of the hypertext markup language file.  all previous lines are now checked for errors and run for proof of functionality.-->
+</html>
+
+<!-- This is where I type notes so I can try to remember what was done in the previoius file/assignment -->
+<!--don't forget to upload to GITHUB.-->
+<!--don't forget to take a few screenshots and upload to CANVAS -->
+<!--when you type value; it'll try to insert Nodevalue, DON"T LET IT!-->
+<!--don't forget == is asking vs = is telling-->
+<!-- &&= and : || = or -->
+<!--the script src command connects the file to the "loginCode.js file"-->
